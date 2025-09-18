@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 你原来的全局样式文件 -->
+    <link href="css/all.css" rel="stylesheet" media="all" type="text/css">
+    <title>Blog</title>
+     <style>
+        .menu 
+        {
+            width: 1000px;
+        }
+    </style>
+
+    <!-- Research Experience 部分的样式 -->
+    <style>
+      /* 通用字体与排版 */
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #222;
+        height: auto;    
+        max-height: none; 
+        overflow: visible;
+      }
+     .news-box3 {
+        background-color: transparent;
+        height: auto;    
+        max-height: none; 
+        overflow: visible;
+      }
+
+      .news-box3 .travel {
+        background-color: transparent;
+        height: auto;    /
+      }
+      /* 每一条经历的外框 */
+      .entry {
+        border-bottom: 1px solid #eee;
+        /* padding: 16px 0; */
+        display: flex;
+        gap: 20px;
+        background-color: transparent;
+      }
+
+      /* 左边文字部分 */
+      .entry-header {
+        flex: 1;
+      }
+
+      /* 项目标题 */
+      .project-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 6px 0;
+        color: #333;
+        text-align: left; 
+        padding-left: 10px; 
+      }
+
+      /* 角色 + 导师信息 */
+      .meta {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+
+      .meta .role {
+        font-style: italic;
+        color: #444;
+        text-align: left;
+        padding-left: 10px; 
+      }
+
+      /* 时间段（右边） */
+      .date {
+        white-space: nowrap;
+        font-size: 14px;
+        color: #444;
+        min-width: 130px;
+        text-align: right;
+      }
+      .location {
+        white-space: nowrap;
+        font-size: 14px;
+        color: #444;
+        width: 130px;
+        text-align: right;
+      }
+
+      /* bullet 样式 */
+      .bullets {
+        margin: 0;
+        padding-left: 20px;
+        text-align: left;
+
+      }
+
+      .bullets li {
+        list-style-type: disc; 
+         margin-left: 20px;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+
+      /* 小屏幕时改为上下堆叠 */
+      .right-info {
+  display: flex;
+  flex-direction: column; /* 垂直排列 date 和 location */
+  align-items: flex-end;  /* 靠右对齐 */
+  min-width: 100px;
+  font-size: 14px;
+  color: #444;
+  gap: 4px; /* 时间和地点之间的间距 */
+}
+
+/* 小屏幕下改为靠左 */
+    @media (max-width: 100px) {
+    .right-info {
+    align-items: flex-start;
+     margin-top: 6px;
+    }
+     }
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        <ul class="center">
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="about.html">Personal Profile</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="like.html">My hobby</a></li>
+            <!-- <li><a href="contact.html">Contact me</a></li> -->
+        </ul>
+        <p class="clear"></p>
+    </div>
+
+    <div class="banner"><img src="images/a2.jpg" width="100%" alt=""></div>
+
+    <div class="ab-box04">
+        <h1>Research Experience</h1>
+    </div>
+
+    <div class="news-box3">
+        <div class="travel">
+            <!-- Research Experience 内容开始 -->
+            <article class="entry" aria-labelledby="proj-1">
+              <div class="entry-header" id="proj-1">
+                <h2 class="project-title">Emotion-Aware Navigation System Design and Implementation</h2>
+                <div class="meta">
+                  <span class="role">Research Assistant</span> —
+                  Supervised by Prof. Stephen Jia Wang
+                </div>
+                <ul class="bullets">
+                  <li>Using <strong>Digital Twin (DT)</strong> to integrate driver emotions with route planning for emotion-aware navigation.</li>
+                  <li>Used machine learning to analyze the traffic environment, model its impact on driver emotions, and study how different routes affect these emotions.</li>
+                  <li>Responsible for data collection and processing; quantitative and qualitative analysis; full-stack development.</li>
+                </ul>
+              </div>
+              <div class="right-info">
+                <div class="date">Sept 2024 - Feb 2025</div>
+                <div class="location">Hong Kong PolyU</div>
+              </div>
+            </article>
+
+            <article class="entry" aria-labelledby="proj-2">
+              <div class="entry-header" id="proj-2">
+                <h2 class="project-title">Supporting Architects’ Design Drafting with Dynamic Demands from Multi-stakeholders</h2>
+                <div class="meta">
+                  <span class="role">Project Leader</span> —
+                  Supervised by Prof. Yonghao Long and Prof. Stephen Jia Wang
+                </div>
+                <ul class="bullets">
+                  <li>To meet the changing needs of project stakeholders, helped architects overcome communication and management challenges during the design concept iteration process.</li>
+                  <li>Developed the <em>ArchiConnect</em> system, which applies DS-LLM to automatically convert stakeholders' needs into user requirements and draft designs.</li>
+                  <li>Responsible for UI & UX design; fine-tuning and optimizing two large language models (LLMs) using TensorFlow and PyTorch for domain-specific applications; full-stack development; interaction with stakeholders.</li>
+                </ul>
+              </div>
+              <div class="right-info">
+                 <div class="date">Mar 2024 - Dec 2024</div>
+                <div class="location">Hong Kong PolyU</div>
+              </div>
+    
+            </article>
+
+            <article class="entry" aria-labelledby="proj-3">
+              <div class="entry-header" id="proj-3">
+                <h2 class="project-title">SyncKnee: A Wearable Knee Monitoring System for Daily Knee Osteoarthritis Prevention and Rehabilitation</h2>
+                <div class="meta">
+                  <span class="role">Research Assistant</span> —
+                  Supervised by Prof. Stephen Jia Wang
+                </div>
+                <ul class="bullets">
+                  <li>Wearable device features a stretchable design with insulation and conductive layers, allowing users to monitor conditions like knee osteoarthritis (KOA) conveniently, reducing the need for clinic visits.</li>
+                  <li>Proposed a customized application to visualize knee data to help users or clinics better understand the knee status.</li>
+                  <li>Responsible for designing a stretchable knee monitoring device; training models involving knee biometrics; providing support for customized information visualization.</li>
+                </ul>
+              </div>
+              <div class="right-info">
+                 <div class="date">Feb 2024 - Jul 2024</div>
+                <div class="location">Hong Kong PolyU</div>
+              </div>
+            </article>
+
+            <article class="entry" aria-labelledby="proj-4">
+              <div class="entry-header" id="proj-4">
+                <h2 class="project-title">A Domain-Specific Large-Language Model based Architectural Design Platform</h2>
+                <div class="meta">
+                  <span class="role">Project Leader</span> —
+                  Supervised by Prof. Yonghao Long and Prof. Stephen Jia Wang
+                </div>
+                <ul class="bullets">
+                  <li>To address reliance on expertise, manual limitations, insufficient data, and lengthy iterations in architectural design.</li>
+                  <li>Developed <em>EarlyArchi</em>: a system that applies DSLLM by providing a professional knowledge library and generating design solutions.</li>
+                  <li>Responsible for data collection; processing text and image data; training models; EarlyArchi full-stack development.</li>
+                </ul>
+              </div>
+              <div class="right-info">
+                  <div class="date">Oct 2023 - Feb 2024</div>
+                 <div class="location">Hong Kong PolyU</div>
+              </div>
+            </article>
+
+            <article class="entry" aria-labelledby="proj-5">
+              <div class="entry-header" id="proj-5">
+                <h2 class="project-title">The Contribution of Maker Culture in Higher research project</h2>
+                <div class="meta">
+                  <span class="role">Researcher</span> —
+                  Supervised by Prof. Clifford Sze Tsan Choy
+                </div>
+                <ul class="bullets">
+                  <li>Summarizes six directions for the development of maker culture as a practice.</li>
+                  <li>Encourages universities to introduce maker culture and create maker spaces to improve students' 21st-century skills and increase competitiveness.</li>
+                  <li>Conducted a systematic review of 80 papers from four major databases.</li>
+                </ul>
+              </div>
+        
+              <div class="right-info">
+                     <div class="date">Dec 2022 - Apr 2023</div>
+                    <div class="location">Hong Kong PolyU</div>
+              </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Blog</p>
+    </div>
+</body>
+</html>
+
